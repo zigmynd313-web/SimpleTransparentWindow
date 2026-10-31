@@ -69,25 +69,6 @@
 - **Восстановление** — в конце жеста исходный стиль `WS_EX_LAYERED` возвращается, так что чужие окна
   не остаются «слоёными» после закрытия утилиты.
 
-## Сборка
-
-Нужен [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0).
-
-```bash
-dotnet publish src/SimpleTransparentWindow.csproj -c Release -o publish
-```
-
-Или готовый скрипт:
-
-```powershell
-.\build.ps1
-```
-
-Готовый файл — `publish/SimpleTransparentWindow.exe`.
-
-Тримминг (`PublishTrimmed`), полный режим (`TrimMode=full`) и сжатие в один файл
-(`EnableCompressionInSingleFile`) удерживают размер в пределах 10 МБ.
-
 ## Настройки и логи
 
 - Настройки: `%APPDATA%\SimpleTransparentWindow\config.ini`
